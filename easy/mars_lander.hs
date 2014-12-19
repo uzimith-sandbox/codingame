@@ -38,6 +38,5 @@ loop location = do
     loop location
 
 moveLander (land_x, land_y) x y hs vs f r p
-  | vs <  10  = putStrLn "0 0"
-  | vs < -50  = putStrLn "0 4"
-  | otherwise = putStrLn "0 0"
+    | vs < -39  = putStrLn "0 4"
+    | otherwise = putStrLn "0 0"
